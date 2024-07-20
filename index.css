@@ -1,0 +1,386 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*::before,*:after{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* start */
+/* 共通樣式 */
+body{
+    font-family: "Bruno Ace SC", sans-serif;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 64px;
+    text-align: left;
+}
+
+.color-white{
+    color:#FFFFFF;
+}
+
+.button{
+        padding: 12px 24px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        border-radius: 32px;
+}
+
+/* header */
+.bg-black{
+    background-color: #000000;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    justify-content: space-between;
+}
+
+.menu li a {
+    font-size: 16px;
+}
+
+.menu li a:hover{
+    color:#00FFA3;
+}
+
+.header{
+    padding-top: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:24px;
+}
+
+.introduceMySelf h1{
+    color:#00FFA3;
+    font-size: 128px;
+    text-align: right;
+}
+
+.introduceMySelf .button{
+    background:#FFFFFF;
+    color:#000000;
+}
+
+.introduceMySelf .button:hover{
+    background:gray;
+    color:#FFFFFF;
+}
+
+.introduceMySelf{
+    text-align: end;
+}
+
+.introduceMySelf-image{
+    max-width: 50%;
+}
+
+/* introduction */
+
+.bg-img{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
+}
+
+.introduction{
+    display: flex;
+    padding: 160px 0;
+    align-items: start;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.decoSparkle{
+    display: flex;
+    justify-content:start;
+    gap: 16px;
+}
+
+.introduction-img{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    width: 57%;
+}
+
+.img-box{
+    padding-top: 600px;
+}
+
+.img-box:nth-child(1){
+    width: 26%;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/sparkle.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.img-box:nth-child(2){
+    width: 26%;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/photographer.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-box:nth-child(3){
+    width: 41%;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/people-2.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.introduction-text{
+    width: 40%;
+}
+
+.introduction-text h2{
+    margin-bottom: 36px;
+}
+
+.introduction-text p {
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+/* about */
+.about{
+    display: flex;
+    padding: 160px 0;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+.about-text{
+    width: 40%;
+}
+
+.about-items{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.about-item{
+    width: 47%;
+    padding: 16px;
+    border: 1px solid #E3E3E3;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.about-text h2{
+    margin-bottom: 36px;
+}
+
+.about-text p{
+    font-size: 24px;
+    color:#15161D;
+}
+
+.about-item h4{
+    font-size: 20px;
+    color: #15161D;
+    margin-bottom: 4px;
+}
+
+.about-item p{
+    font-size: 16px;
+    color: #15161D;
+}
+
+/* contact */
+.bg-gradient{
+    background: linear-gradient(to bottom,#050014, rgba(1, 2, 30, 0.89));
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 9%;
+    padding: 96px 0;
+}
+
+.socialMedia{
+    display: flex;
+    gap:20px;
+    width: 40%;
+}
+
+.contact-me h2{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact-me h2 span{
+    font-size:70px ;
+    line-height: 100px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* project */
+.project{
+    padding: 160px 0;
+}
+.project h2{
+    text-align: center;
+    margin-bottom: 16px;
+    padding-left: 42%;
+}
+
+.project-items-large{
+    display: flex;
+    gap:24px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .project-items-medium-pic{
+    width: 32%;
+    height: 100%;
+} */
+
+.project-items-medium{
+    width: 66%;
+    display: flex;
+    gap: 28px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.project-items-small-intro{
+    display: flex;
+    gap:24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .project-items-small-intro img{
+    width: 22%;
+    height: 100%;
+} */
+
+.project-items-small-pics{
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-items-small-introText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 76px;
+}
+
+/* .project-items-small-pics img:nth-child(1){
+    width: 36%;
+    height: 100%;
+}
+
+.project-items-small-pics img:nth-child(2){
+    width: 61%;
+    height: 100%;
+} */
+
+.project-items-small-introText .button{
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.project-items-small-introText .button:hover{
+    color:#FFFFFF;
+    background-color: gray ;
+}
+
+/* footer */
+.footer{
+    padding: 40px 0;
+    color: #FFFFFF;
+}
+
+.footer p{
+    font-size: 16px;
+    text-align: center;
+}
